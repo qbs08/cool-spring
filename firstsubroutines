@@ -1,0 +1,74 @@
+class palindrome {
+
+package firstsubroutines;
+
+import java.util.Scanner;
+
+
+	
+static String reverse(String s)  { //reverse String
+	return s;
+}
+
+public static class firstsubroutines {
+	
+public static String main(String[] args) {
+
+	char ch;
+	int i;
+	String s1="";
+	String s = null;
+	for(i=s.length()-1;i>=0;i--)   
+	{
+	ch=s.charAt(i); //extracting charecters
+	s1=s1+ch; //making a new string
+	}
+	return (s1); //returning the string
+	}
+	String stripped(String s) //stripped function
+	{
+	String s1="";
+	s=s.toLowerCase();
+	for(int i = 0;i<s.length();i++)
+	{
+	if(Character.isLetter(s.charAt(i))) //checking for nonalphabetic characters
+	s1=s1+s.charAt(i); //making a new string
+	else
+	continue;
+	}
+	return (s1); //returning the string
+	}
+
+	 {
+		// TODO Auto-generated method stub
+		String str,a,b; //varaibles
+		pal obj=new pal();
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter a string");
+		
+		str=sc.nextLine();
+		a=obj.stripped(str); //calling the stripped function
+		
+		System.out.println("stripped: "+a);
+		
+		b=pal.reverse(a); //calling the reverse function
+		
+		System.out.println("reversed: "+b);
+		
+		boolean ch=a.equals(b);
+		if(ch==true)//if true
+			
+		System.out.println("This is a palindrome");
+		else
+		System.out.println("This is not a palindrome");
+		}
+		
+}
+
+public String stripped(String str) {
+	// TODO Auto-generated method stub
+	return null;
+} } 
+	
